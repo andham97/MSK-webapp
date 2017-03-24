@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>MSKTur</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/loaf-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/loaf-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/loaf-114x114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/loaf-144x144.png" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/pure-min.css'/>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+    <script src="/javascripts/tools/jQuery.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,400italic,600italic,700' rel='stylesheet' type='text/css'>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="http://spin.js.org/spin.min.js"></script>
+    <script src="/javascripts/myTrips.js"></script>
+    <script src="/javascripts/tools/site-controller.js"></script>
+</head>
+<body>
+
+<div id="header">
+    <div class="logo">
+        <a href="/">MSK<span>Tur</span></a>
+        <img class="mobile" id="menu" src="/images/icons/menu.png">
+    </div>
+
+</div>
+
+<div class="spacer" data-space="55"></div>
+
+<div id="container">
+
+    <div class="sidebar">
+        <ul id="nav">
+            <li><a href="/"><img src="/images/icons/calendar.png"> Turer<img src="/images/icons/arrow.png" class="arrow"></a></li>
+            <li><a href="/badges"><img src="/images/icons/sticker.png"> Merker<img src="/images/icons/arrow.png" class="arrow"></a></li>
+            <li><a href="/profile"><img src="/images/icons/profile.png"> Brukerprofil<img src="/images/icons/arrow.png" class="arrow"></a></li>
+            <%- menu %>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1 class="noTopMargin">Mine Turer</h1>
+        <%- trips %>
+        <%- footer %>
+    </div>
+</div>
+</body>
+</html>

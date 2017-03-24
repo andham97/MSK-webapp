@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>MSKTur</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/loaf-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/loaf-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/loaf-114x114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/loaf-144x144.png" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/login.css'/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,400italic,600italic,700' rel='stylesheet' type='text/css'>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>-->
+    <script src="/javascripts/tools/jQuery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="http://spin.js.org/spin.min.js"></script>
+    <script src="/javascripts/addBadge.js"></script>
+    <script src="/javascripts/tools/extractDomain.js"></script>
+
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <script type="text/javascript">
+        window.cookieconsent_options = {
+            "message": "This website must be allowed usage of cookies, else you can not enjoy the content",
+            "dismiss": "OK",
+            "learnMore": "More info",
+            "link": null,
+            "theme": "light-bottom"
+        };
+    </script>
+    <script type="text/javascript"
+            src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+    <!-- End Cookie Consent plugin -->
+</head>
+<body>
+<div class="login-page">
+    <div class="form">
+        <div id="response"><strong>User don't exist</strong></div>
+        <form class="login-form" autocomplete="off">
+            <input type="text" id="title" placeholder="Tittel" />
+            <strong>Beskrivelse</strong><br>
+            <textarea id="desc"></textarea>
+            <strong>Krav (ny linje for hvert krav)</strong><br>
+            <textarea id="req"></textarea>
+            <button type="button" onclick="add()">opprett</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
